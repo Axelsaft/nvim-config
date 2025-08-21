@@ -6,10 +6,11 @@ return {
       "Mofiqul/vscode.nvim",
       "iagorrr/noctishc.nvim",
       "sainnhe/gruvbox-material",
+      "rose-pine/neovim",
     },
     lazy = false,
     priority = 1000,
     config = function()
-       vim.cmd("colorscheme kanagawa")
+       vim.cmd("colorscheme vscode")
    end
 }
