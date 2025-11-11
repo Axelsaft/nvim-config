@@ -1,7 +1,15 @@
 vim.lsp.config('rust_analyzer', {
-  settings = {
-    ['rust-analyzer'] = {},
-  },
+settings = {
+    ["rust-analyzer"] = {
+      inlayHints = {
+        enable = true,
+        typeHints = true,
+        parameterHints = true,
+        chainingHints = true,
+        maxLength = nil,
+      }
+    }
+  }
 })
 
 vim.lsp.config('lua_ls', {

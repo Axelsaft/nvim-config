@@ -25,3 +25,4 @@ vim.diagnostic.config({
     severity_sort = true,
 })
 vim.diagnostic.enable()
+vim.lsp.inlay_hint.enable(true)
