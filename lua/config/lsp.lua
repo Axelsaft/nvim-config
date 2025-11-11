@@ -3,7 +3,6 @@ vim.lsp.config('rust_analyzer', {
     ['rust-analyzer'] = {},
   },
 })
-vim.lsp.enable("rust_analyzer")
 
 vim.lsp.config('lua_ls', {
    on_init = function(client)
@@ -52,6 +51,9 @@ vim.lsp.config('lua_ls', {
    settings = {
      Lua = {}
    }
- })
-vim.lsp.enable("lua_ls")
+})
 
+vim.lsp.enable("lua_ls")
+vim.lsp.enable("rust_analyzer")
+vim.lsp.enable("lemminx")
+vim.lsp.enable("clangd")
