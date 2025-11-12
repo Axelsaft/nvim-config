@@ -66,4 +66,7 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help ta
 wk.add({
 	'<leader>x', group = "Diagnostics"
 })
+vim.keymap.set('n', '<leader>xd', function ()
+	vim.diagnostic.open_float()
+end, {desc = 'Show Diagnostics Window'})
 --

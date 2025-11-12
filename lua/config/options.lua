@@ -23,6 +23,7 @@ vim.diagnostic.config({
     -- wie schnell die Diagnosen aktualisiert werden
     update_in_insert = true,
     severity_sort = true,
+	wrap = true,
 })
 vim.diagnostic.enable()
 vim.lsp.inlay_hint.enable(true)
